@@ -134,7 +134,7 @@ const vingroupItems = [
     title: "Hệ thống Y tế Phi lợi nhuận",
     content:
       "Năm 2016, Vinmec chuyển sang mô hình phi lợi nhuận. 100% lợi nhuận tái đầu tư vào nâng cấp cơ sở, đào tạo nhân lực. Tài trợ 300 tỷ đồng phẫu thuật miễn phí cho bệnh nhân nghèo và người có công.",
-    link: "https://dantri.com.vn/doi-song/vingroup-tai-tro-300-ty-dong-phau-thuat-tu-thien-cho-cac-doi-tuong-chinh-sach-20161017144648306.htm",
+    link: "https://nhandan.vn/chuyen-vinmec-vinschool-sang-mo-hinh-phi-loi-nhuan-post273782.html",
   },
   {
     id: "vinschool",
@@ -143,7 +143,7 @@ const vingroupItems = [
     title: "Hệ thống Giáo dục",
     content:
       "Hàng chục cơ sở trên cả nước. Học bổng 50–100% cho học sinh nghèo vượt khó và tài năng. Quỹ Thiện Tâm xây điểm trường kiên cố tại Sơn La, Hà Giang, Mù Căng Chải hoàn toàn miễn phí.",
-    link: "https://nhandan.vn/chuyen-vinmec-vinschool-sang-mo-hinh-phi-loi-nhuan-post273782.html",
+    link: "https://vnexpress.net/vinschool-trao-hoc-bong-cho-hang-tram-hoc-sinh-ca-nuoc-4945644.html",
   },
   {
     id: "vinuni",
@@ -151,8 +151,8 @@ const vingroupItems = [
     icon: "🎓",
     title: "Đại học VinUni",
     content:
-      "Đại học phi lợi nhuận đẳng cấp quốc tế. Học bổng tinh hoa hàng năm từ 50% đến toàn phần. 100% lợi nhuận tái đầu tư vào nghiên cứu khoa học và đào tạo nhân tài.",
-    link: "https://nhandan.vn/chuyen-vinmec-vinschool-sang-mo-hinh-phi-loi-nhuan-post273782.html",
+      "Đại học phi lợi nhuận đẳng cấp quốc tế. Học bổng tinh hoa hàng năm từ 90% đến toàn phần. 100% lợi nhuận tái đầu tư vào nghiên cứu khoa học và đào tạo nhân tài.",
+    link: "https://vov.gov.vn/vinuni-thu-hut-sinh-vien-va-cac-tai-nang-tam-co-quoc-te-dtnew-247800",
   },
   {
     id: "thientam",
@@ -161,7 +161,7 @@ const vingroupItems = [
     title: "Quỹ Từ thiện Thiện Tâm",
     content:
       "Xây hàng trăm điểm trường kiên cố tại vùng sâu thay thế lớp vách tre. Hỗ trợ thiên tai, đồng bào dân tộc thiểu số. Chương trình an sinh xã hội toàn diện trên cả nước.",
-    link: "https://chungta.vn/van-hoa/quy-nha-f-xay-moi-4-ngoi-truong-cho-hoc-sinh-vung-cao-1134056.html",
+    link: "https://baochinhphu.vn/quy-thien-tam-don-nhan-huan-chuong-lao-dong-hang-nhat-cua-chu-tich-nuoc-102250812095354327.htm",
   },
 ];
 
@@ -171,7 +171,7 @@ const viettelItems = [
     label: "Phủ sóng biên giới",
     content:
       "Đầu tư hàng trăm tỷ đồng xây trạm BTS tại vùng sâu, đồn biên phòng. Nhiều trạm lỗ vốn kinh tế nhưng vẫn duy trì theo phương châm: \"Ở đâu có dân, có bộ đội — ở đó phải có sóng Viettel.\"",
-    link: "https://www.google.com/search?q=https://www.qdnd.vn/kinh-te/cac-van-de/bai-2-nhoc-nhan-cong-song-toi-vung-bien-ti%E1%BA%BFp-theo-va-het-644922&authuser=1",
+    link: "https://www.qdnd.vn/kinh-te/cac-van-de/bai-2-nhoc-nhan-cong-song-toi-vung-bien-tiep-theo-va-het-644922",
   },
   {
     icon: "🏫",
@@ -389,11 +389,8 @@ function Hero() {
         >
           Kinh tế <span className="text-amber-400">Tư nhân</span>
           <br />
-          <span className="text-blue-400">trong nền KTTT</span>
+          <span className="text-blue-400">& Định hướng xã hội chủ nghĩa</span>
           <br />
-          <span className="text-slate-400" style={{ fontSize: "0.68em" }}>
-            định hướng Xã hội Chủ nghĩa
-          </span>
         </motion.h1>
 
         <motion.p
@@ -975,7 +972,17 @@ function S5CaseStudy() {
                         >
                           {item.label}
                         </h4>
-                        <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{item.content}</p>
+                        <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">{item.content}
+                      </p>
+
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-blue-600 dark:text-blue-400 hover:underline break-all"
+                      >
+                        Xem nguồn →
+                      </a>
                       </motion.div>
                     </FadeIn>
                   ))}
