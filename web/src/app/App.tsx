@@ -1456,9 +1456,9 @@ function Summary() {
               className="font-semibold text-lg leading-relaxed"
               style={{ fontFamily: "'Be Vietnam Pro', sans-serif" }}
             >
-              Doanh nghiệp tư nhân{" "}
+              Kinh Tế tư nhân{" "}
               <span className="text-amber-400">không mang bản chất XHCN</span>, nhưng dưới sự định hướng
-              của Nhà nước, họ{" "}
+              của Nhà nước, vẫn{" "}
               <span className="text-emerald-400">góp phần thực hiện các mục tiêu XHCN</span> thông qua
               việc làm, thuế, TNXH và phát triển bền vững.
             </p>
